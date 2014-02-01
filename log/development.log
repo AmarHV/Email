@@ -7746,3 +7746,1597 @@ Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 02:07:11 -0500
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 02:07:11 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:29:11 -0500
+Processing by TasksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/_home.html.erb (1.6ms)
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:29:11 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:29:11 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:29:11 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:29:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:29:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:29:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:29:11 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:29:11 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:29:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:29:11 -0500
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-02-01 14:29:28 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aLHO8igEtF2swKXB482PCACx1yX0jeGxp3pXmWZDYjc="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:29:28 -0500
+Processing by TasksController#index as HTML
+  Rendered pages/_home.html.erb (0.8ms)
+  Rendered tasks/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <%= render 'pages/home' %>
+    2: <%= puts current_user.id%>
+    3: <% if user_signed_in? %>
+    4:   <h1>Listing tasks</h1>
+    5: 
+  app/views/tasks/index.html.erb:2:in `_app_views_tasks_index_html_erb___2634758634811317282_2215771720'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:30:37 -0500
+Processing by TasksController#index as HTML
+  Rendered pages/_home.html.erb (0.8ms)
+  Rendered tasks/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:30:37 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:30:37 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:30:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:30:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:30:37 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:30:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:30:37 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:30:37 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:30:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:30:37 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-02-01 14:30:39 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-02-01 14:30:42 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xlRvSSTDLBBIQt3K4HM7rD5WhEJA7Va+thpeuhT3iQs=", "user"=>{"email"=>"bri.lobdell@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'bri.lobdell@gmail.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["last_sign_in_at", Sat, 01 Feb 2014 07:07:05 UTC +00:00], ["current_sign_in_at", Sat, 01 Feb 2014 19:30:42 UTC +00:00], ["sign_in_count", 14], ["updated_at", Sat, 01 Feb 2014 19:30:42 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 98ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:30:42 -0500
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (1.1ms)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:30:42 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:30:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:30:42 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:30:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:30:42 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:30:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:30:42 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:30:42 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:30:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:30:42 -0500
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:32:27 -0500
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (2.1ms)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:32:27 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:32:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:32:27 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:32:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:32:27 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:32:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:32:27 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:32:27 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:32:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:32:27 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:32:49 -0500
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (1.7ms)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:32:49 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:32:50 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:32:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:32:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:32:50 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:32:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:32:50 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:32:50 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:32:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:32:50 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:33:14 -0500
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (2.1ms)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:14 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:14 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:14 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:14 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:14 -0500
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-02-01 14:33:17 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sRlnjuGrWVZV5wXkxtcZXbtuJLU5q/wIjGSbS0o0bIg="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:33:17 -0500
+Processing by TasksController#index as HTML
+  Rendered pages/_home.html.erb (0.8ms)
+  Rendered tasks/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:17 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:17 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:17 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:17 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:17 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:17 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-02-01 14:33:20 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-02-01 14:33:31 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x+jgWT0RRGkuw/i/QlX5mldjFJVReB55DzFRxna7odo=", "user"=>{"email"=>"ggg@ggg.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'ggg@ggg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 104ms (Views: 7.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:31 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:31 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:31 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:31 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:31 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:31 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:33:40 -0500
+Processing by TasksController#index as HTML
+  Rendered pages/_home.html.erb (0.6ms)
+  Rendered tasks/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:40 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:40 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:40 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:40 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:40 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:40 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-02-01 14:33:43 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-02-01 14:33:47 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x+jgWT0RRGkuw/i/QlX5mldjFJVReB55DzFRxna7odo=", "user"=>{"email"=>"bri.lobdell@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'bri.lobdell@gmail.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["last_sign_in_at", Sat, 01 Feb 2014 19:30:42 UTC +00:00], ["current_sign_in_at", Sat, 01 Feb 2014 19:33:47 UTC +00:00], ["sign_in_count", 15], ["updated_at", Sat, 01 Feb 2014 19:33:47 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 97ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:33:47 -0500
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (1.1ms)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:47 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:47 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:47 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:33:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:47 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:47 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:33:47 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:34:50 -0500
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (12.8ms)
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:34:50 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:34:50 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:34:50 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:34:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:34:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:34:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:34:50 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:34:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:34:50 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:34:50 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:35:14 -0500
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (1.6ms)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:14 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:14 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:14 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:14 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:14 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:14 -0500
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-02-01 14:35:15 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uAugXQJk6d5+UC1oOw5zpGHmSucdsO5V+qFaQtXuTnI="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 38ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:35:15 -0500
+Processing by TasksController#index as HTML
+  Rendered pages/_home.html.erb (0.7ms)
+  Rendered tasks/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:15 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:15 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:15 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:15 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:15 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:15 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-02-01 14:35:18 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-02-01 14:35:21 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I1vG6yJCmaiojCKS0jNanPO4RMmlPqbAGpzsSGYnwcI=", "user"=>{"email"=>"bri.lobdell@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'bri.lobdell@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["last_sign_in_at", Sat, 01 Feb 2014 19:33:47 UTC +00:00], ["current_sign_in_at", Sat, 01 Feb 2014 19:35:21 UTC +00:00], ["sign_in_count", 16], ["updated_at", Sat, 01 Feb 2014 19:35:21 UTC +00:00]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 98ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:35:21 -0500
+Processing by TasksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/_home.html.erb (1.1ms)
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:21 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:21 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:21 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:21 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:21 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:21 -0500
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2014-02-01 14:35:22 -0500
+Processing by TasksController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered tasks/_form.html.erb (3.1ms)
+  Rendered tasks/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 20ms (Views: 9.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2014-02-01 14:35:31 -0500
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WEjE/SCQv/oNLdor+L8q1jYH/MX/3hvXOkcFcVmSziQ=", "task"=>{"title"=>"bri.lobdell can only see", "description"=>"", "recipientname"=>"", "recipientemail"=>""}, "commit"=>"Create Task"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "recipientemail", "recipientname", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 01 Feb 2014 19:35:31 UTC +00:00], ["description", ""], ["recipientemail", ""], ["recipientname", ""], ["title", "bri.lobdell can only see"], ["updated_at", Sat, 01 Feb 2014 19:35:31 UTC +00:00], ["user_id", 1]]
+  [1m[35m (42.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks/11
+Completed 302 Found in 49ms (ActiveRecord: 43.3ms)
+
+
+Started GET "/tasks/11" for 127.0.0.1 at 2014-02-01 14:35:31 -0500
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  Rendered tasks/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:31 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:31 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:31 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:31 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:31 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:31 -0500
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-02-01 14:35:32 -0500
+Processing by TasksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/_home.html.erb (2.4ms)
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-02-01 14:35:34 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WEjE/SCQv/oNLdor+L8q1jYH/MX/3hvXOkcFcVmSziQ="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:35:34 -0500
+Processing by TasksController#index as HTML
+  Rendered pages/_home.html.erb (0.7ms)
+  Rendered tasks/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:34 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:34 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:34 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:34 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:34 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:34 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-02-01 14:35:36 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-02-01 14:35:40 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r6UHNh9W72BKO5cI6+UBl/qWpQ5dP2nKgCKz4yYGBc0=", "user"=>{"email"=>"blobdell15@amherst.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'blobdell15@amherst.edu' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 2[0m  [["last_sign_in_at", Sat, 01 Feb 2014 07:05:26 UTC +00:00], ["current_sign_in_at", Sat, 01 Feb 2014 19:35:40 UTC +00:00], ["sign_in_count", 6], ["updated_at", Sat, 01 Feb 2014 19:35:40 UTC +00:00]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 98ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:35:40 -0500
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (1.1ms)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:40 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:40 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:40 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:40 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:40 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:40 -0500
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2014-02-01 14:35:41 -0500
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered tasks/_form.html.erb (2.7ms)
+  Rendered tasks/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2014-02-01 14:35:49 -0500
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hPFIKV12gS7hymjmuPkBv37GinYGOPTbIio9au9buQM=", "task"=>{"title"=>"blobdell15 can only see", "description"=>"", "recipientname"=>"", "recipientemail"=>""}, "commit"=>"Create Task"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tasks" ("created_at", "description", "recipientemail", "recipientname", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 01 Feb 2014 19:35:49 UTC +00:00], ["description", ""], ["recipientemail", ""], ["recipientname", ""], ["title", "blobdell15 can only see"], ["updated_at", Sat, 01 Feb 2014 19:35:49 UTC +00:00], ["user_id", 2]]
+  [1m[36m (50.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tasks/12
+Completed 302 Found in 55ms (ActiveRecord: 50.9ms)
+
+
+Started GET "/tasks/12" for 127.0.0.1 at 2014-02-01 14:35:49 -0500
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "12"]]
+  Rendered tasks/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:49 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:49 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:49 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:49 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:49 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:49 -0500
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-02-01 14:35:50 -0500
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (1.3ms)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-02-01 14:35:51 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hPFIKV12gS7hymjmuPkBv37GinYGOPTbIio9au9buQM="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:35:51 -0500
+Processing by TasksController#index as HTML
+  Rendered pages/_home.html.erb (0.7ms)
+  Rendered tasks/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:51 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:51 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:51 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:51 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:51 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:51 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:52 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:52 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-02-01 14:35:53 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-02-01 14:35:56 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eBLHF0jMgcITuBxvCXFgaGzG4i4+CNqNtD6rXFow9wU=", "user"=>{"email"=>"bri.lobdell@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'bri.lobdell@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["last_sign_in_at", Sat, 01 Feb 2014 19:35:21 UTC +00:00], ["current_sign_in_at", Sat, 01 Feb 2014 19:35:56 UTC +00:00], ["sign_in_count", 17], ["updated_at", Sat, 01 Feb 2014 19:35:56 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 96ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:35:56 -0500
+Processing by TasksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/_home.html.erb (1.1ms)
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:56 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:56 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:56 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:35:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:56 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:56 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:35:56 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:36:22 -0500
+Processing by TasksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/_home.html.erb (1.9ms)
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:36:22 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:36:22 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:36:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:36:22 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:36:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:36:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:36:22 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:36:22 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:36:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:36:22 -0500
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-02-01 14:36:23 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"30U8KJNCsfH1iKT4m3cOUI2L1rPLc7UTs8tT3mFLL5o="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:36:23 -0500
+Processing by TasksController#index as HTML
+  Rendered pages/_home.html.erb (0.6ms)
+  Rendered tasks/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:36:23 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:36:23 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:36:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:36:23 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:36:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:36:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:36:24 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:36:24 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:36:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:36:24 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-02-01 14:40:39 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-02-01 14:40:42 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bDV6GpjCokaKv7mKPiLE7vn4DXRY0hrW4HISE4ZmR8Y=", "user"=>{"email"=>"bri.lobdell@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'bri.lobdell@gmail.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["last_sign_in_at", Sat, 01 Feb 2014 19:35:56 UTC +00:00], ["current_sign_in_at", Sat, 01 Feb 2014 19:40:42 UTC +00:00], ["sign_in_count", 18], ["updated_at", Sat, 01 Feb 2014 19:40:42 UTC +00:00]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 97ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:40:42 -0500
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (1.0ms)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:40:42 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:40:42 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:40:42 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:40:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:40:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:40:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:40:42 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:40:42 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:40:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:40:42 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:41:32 -0500
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (13.1ms)
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 62ms (Views: 26.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:41:32 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:41:32 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:41:32 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:41:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:41:32 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:41:32 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:41:32 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:41:32 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:41:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:41:32 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:49:35 -0500
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (15.2ms)
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 34ms (Views: 29.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:49:35 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:49:35 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:49:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:35 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:49:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:35 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:35 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:36 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:36 -0500
+
+
+Started DELETE "/tasks/11" for 127.0.0.1 at 2014-02-01 14:49:40 -0500
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"K912EzrFyjBQeYsiz575U8LP9OKzqrgTJd91jKeNZRQ=", "id"=>"11"}
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 11]]
+  [1m[35m (3.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 7ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-02-01 14:49:40 -0500
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (1.3ms)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:49:40 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:49:40 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:49:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:40 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:49:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:40 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:40 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:40 -0500
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-02-01 14:49:42 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"K912EzrFyjBQeYsiz575U8LP9OKzqrgTJd91jKeNZRQ="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:49:42 -0500
+Processing by TasksController#index as HTML
+  Rendered pages/_home.html.erb (0.7ms)
+  Rendered tasks/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:49:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:42 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:49:42 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:49:42 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:49:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:42 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:42 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:49:42 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:53:00 -0500
+Processing by TasksController#index as HTML
+  Rendered pages/_home.html.erb (0.5ms)
+  Rendered tasks/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:53:00 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:53:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:53:00 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:53:00 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:53:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:53:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:53:00 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:53:00 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:53:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:53:00 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-02-01 14:53:01 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-02-01 14:53:05 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pfgr+WGkLO/dG+zc1Kj/OQRsaGGHbSiPkioM2K8WDKo=", "user"=>{"email"=>"bri.lobdell@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'bri.lobdell@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["last_sign_in_at", Sat, 01 Feb 2014 19:40:42 UTC +00:00], ["current_sign_in_at", Sat, 01 Feb 2014 19:53:05 UTC +00:00], ["sign_in_count", 19], ["updated_at", Sat, 01 Feb 2014 19:53:05 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 98ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:53:05 -0500
+Processing by TasksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/_home.html.erb (1.1ms)
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:53:05 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:53:05 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:53:05 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:53:05 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:53:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:53:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:53:05 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:53:05 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:53:05 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:53:05 -0500
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2014-02-01 14:53:06 -0500
+Processing by TasksController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered tasks/_form.html.erb (3.2ms)
+  Rendered tasks/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2014-02-01 14:53:28 -0500
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4lC5I456SlOC0Avk9qx6dBsA1ZjmweRL30ovjngylmo=", "task"=>{"title"=>"Reminder Test", "description"=>"PLEASE WORK", "recipientname"=>"brian lobdell", "recipientemail"=>"bri.lobdell@gmail.com"}, "commit"=>"Create Task"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "recipientemail", "recipientname", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 01 Feb 2014 19:53:28 UTC +00:00], ["description", "PLEASE WORK"], ["recipientemail", "bri.lobdell@gmail.com"], ["recipientname", "brian lobdell"], ["title", "Reminder Test"], ["updated_at", Sat, 01 Feb 2014 19:53:28 UTC +00:00], ["user_id", 1]]
+  [1m[35m (255.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks/13
+Completed 302 Found in 263ms (ActiveRecord: 256.1ms)
+
+
+Started GET "/tasks/13" for 127.0.0.1 at 2014-02-01 14:53:29 -0500
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  Rendered tasks/show.html.erb within layouts/application (696.5ms)
+Completed 500 Internal Server Error in 700ms
+
+ActionView::Template::Error (undefined method `reminder_email' for UserMail:Class):
+    22: 
+    23: <%= link_to 'Edit', edit_task_path(@task) %> |
+    24: <%= link_to 'Back', tasks_path %>
+    25: <%UserMail.reminder_email(@task).deliver%>
+  app/views/tasks/show.html.erb:25:in `_app_views_tasks_show_html_erb__4209379582150604012_2169199620'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.5ms)
+
+
+Started GET "/tasks/13" for 127.0.0.1 at 2014-02-01 14:54:04 -0500
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "13"]]
+  Rendered tasks/show.html.erb within layouts/application (15.4ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (Missing template user_mail/task_reminder with "mailer". Searched in:
+  * "user_mail"
+):
+    22: 
+    23: <%= link_to 'Edit', edit_task_path(@task) %> |
+    24: <%= link_to 'Back', tasks_path %>
+    25: <%UserMail.task_reminder(@task).deliver%>
+  app/mailers/user_mail.rb:8:in `task_reminder'
+  app/views/tasks/show.html.erb:25:in `_app_views_tasks_show_html_erb__4209379582150604012_2171268560'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-01 14:54:18 -0500
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (1.5ms)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-01 14:54:19 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-01 14:54:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-01 14:54:19 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-01 14:54:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-01 14:54:19 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-01 14:54:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-01 14:54:19 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-01 14:54:19 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-01 14:54:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-01 14:54:19 -0500
+
+
+Started GET "/tasks/13" for 127.0.0.1 at 2014-02-01 14:54:21 -0500
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  Rendered tasks/show.html.erb within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (Missing template user_mail/task_reminder with "mailer". Searched in:
+  * "user_mail"
+):
+    22: 
+    23: <%= link_to 'Edit', edit_task_path(@task) %> |
+    24: <%= link_to 'Back', tasks_path %>
+    25: <%UserMail.task_reminder(@task).deliver%>
+  app/mailers/user_mail.rb:8:in `task_reminder'
+  app/views/tasks/show.html.erb:25:in `_app_views_tasks_show_html_erb__4209379582150604012_2198104860'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.5ms)
+
+
+Started GET "/tasks/13" for 127.0.0.1 at 2014-02-01 14:54:21 -0500
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "13"]]
+  Rendered tasks/show.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (Missing template user_mail/task_reminder with "mailer". Searched in:
+  * "user_mail"
+):
+    22: 
+    23: <%= link_to 'Edit', edit_task_path(@task) %> |
+    24: <%= link_to 'Back', tasks_path %>
+    25: <%UserMail.task_reminder(@task).deliver%>
+  app/mailers/user_mail.rb:8:in `task_reminder'
+  app/views/tasks/show.html.erb:25:in `_app_views_tasks_show_html_erb__4209379582150604012_2171268560'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.9ms)
+
+
+Started GET "/tasks/13" for 127.0.0.1 at 2014-02-01 14:56:25 -0500
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  Rendered tasks/show.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::UserMailer):
+    22: 
+    23: <%= link_to 'Edit', edit_task_path(@task) %> |
+    24: <%= link_to 'Back', tasks_path %>
+    25: <%UserMailer.task_reminder(@task).deliver%>
+  app/views/tasks/show.html.erb:25:in `_app_views_tasks_show_html_erb__4209379582150604012_2155295020'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/tasks/13" for 127.0.0.1 at 2014-02-01 14:56:31 -0500
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "13"]]
+  Rendered tasks/show.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (Missing template user_mail/task_reminder with "mailer". Searched in:
+  * "user_mail"
+):
+    22: 
+    23: <%= link_to 'Edit', edit_task_path(@task) %> |
+    24: <%= link_to 'Back', tasks_path %>
+    25: <%UserMail.task_reminder(@task).deliver%>
+  app/mailers/user_mail.rb:8:in `task_reminder'
+  app/views/tasks/show.html.erb:25:in `_app_views_tasks_show_html_erb__4209379582150604012_2171281580'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Here is your task, <%= @task.recipientname %></h1>
+    <p>
+      You are being reminded about <%=@task.title%>. Here is what you've been asked to do:
+    </p>
+    <p>
+      <%= @task.description%>
+    </p>
+  </body>
+</html>
