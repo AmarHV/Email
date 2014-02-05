@@ -22,6 +22,11 @@ class TasksController < ApplicationController
   def edit
   end
 
+  #def send(task)
+   #@task = task
+   # UserMail.task_reminder(@task).deliver
+  #end
+
   # POST /tasks
   # POST /tasks.json
   def create
@@ -61,6 +66,12 @@ class TasksController < ApplicationController
       format.html { redirect_to tasks_url }
       format.json { head :no_content }
     end
+  end
+
+  def send_mail
+    @task = Task.find(params[:task_id])
+    UserMail.task_reminder(@task).deliver
+    redirect_to :back
   end
 
   private

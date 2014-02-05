@@ -1,0 +1,4 @@
+<%= form_tag("/tasks/send_mail", method: "post", url: send_mail_path) do  %>
+<%= hidden_field_tag :task_id, '#{task.id}' %>
+<%= submit_tag "Remind" %>
+<% end %>
