@@ -6,10 +6,6 @@ class UserMail < ActionMailer::Base
   	mail(to: @task.recipientemail, subject: "You've been sent a reminded")
   end
 
-  def send_mail
-	@task = Task.find(params[:task_id])
-	UserMail.task_reminder(@task).deliver
-	redirect_to :back
-  end
+ 
 
 end
