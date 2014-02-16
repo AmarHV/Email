@@ -69,11 +69,9 @@ class TasksController < ApplicationController
   end
 
   def send_mail
-    if(params.has_key?(:task_id))
-      redirect_to "/"
-    end
-    @task = Task.find(params[:task_id])
-    UserMail.task_reminder(@task).deliver
+   
+    task = Task.find(params[:task_id])
+    UserMail.task_reminder(task).deliver
     redirect_to :back
   end
 

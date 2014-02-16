@@ -25,7 +25,10 @@
             <td><%= link_to 'Show', task %></td>
             <td><%= link_to 'Edit', edit_task_path(task) %></td>
             <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-            <td> <%= render 'tasks/send_mail' %></td>
+            <td><%= form_tag("/tasks/send_mail", method: "post", url: send_mail_path) do  %>
+<%= hidden_field_tag :task_id, "#{task.id}" %>
+<%= submit_tag "Remind" %>
+<% end %></td>
 
           </tr>
         <%end%>

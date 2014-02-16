@@ -16191,3 +16191,827 @@ ActiveRecord::RecordNotFound (Couldn't find Task with id=#{task.id}):
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p353@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-08 09:22:28 +1300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  Rendered pages/_home.html.erb (7.5ms)
+  Rendered tasks/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 1707ms (Views: 1681.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-08 09:22:30 +1300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-08 09:22:30 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-08 09:22:30 +1300
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-08 09:22:30 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-08 09:22:30 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-08 09:22:30 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-08 09:22:30 +1300
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-08 09:22:30 +1300
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-08 09:22:30 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-08 09:22:30 +1300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-02-08 09:22:32 +1300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (41.5ms)
+Completed 200 OK in 62ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-02-08 09:22:35 +1300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-02-08 09:22:41 +1300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b03XVAabnKwRF+Hcq64q6xCx4QKrKMW8/5CqGF4CSCY=", "user"=>{"email"=>"amarh21@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'amarh21@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (9.0ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Fri, 07 Feb 2014 20:22:42 UTC +00:00], ["email", "amarh21@gmail.com"], ["encrypted_password", "$2a$10$cs/fI/BWEKkIWPjtDbVnuunmSS.wnRdfslhXpIDNOOeQBGuOjRuTW"], ["updated_at", Fri, 07 Feb 2014 20:22:42 UTC +00:00]]
+  [1m[36m (19.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `last_sign_in_ip`
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3[0m  [["last_sign_in_at", Fri, 07 Feb 2014 20:22:42 UTC +00:00], ["current_sign_in_at", Fri, 07 Feb 2014 20:22:42 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Fri, 07 Feb 2014 20:22:42 UTC +00:00]]
+  [1m[35m (21.5ms)[0m  commit transaction
+Redirected to http://localhost:9080/
+Completed 302 Found in 160ms (ActiveRecord: 51.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-08 09:22:42 +1300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (3.5ms)
+  [1m[35mTask Load (0.5ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2014-02-08 09:22:45 +1300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered tasks/_form.html.erb (2.5ms)
+  Rendered tasks/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 49ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2014-02-08 09:22:59 +1300
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b03XVAabnKwRF+Hcq64q6xCx4QKrKMW8/5CqGF4CSCY=", "task"=>{"title"=>"Task", "description"=>"Task", "recipientname"=>"Amar", "recipientemail"=>"amar@sittr.co.nz"}, "commit"=>"Create Task"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "tasks" ("created_at", "description", "recipientemail", "recipientname", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 07 Feb 2014 20:22:59 UTC +00:00], ["description", "Task"], ["recipientemail", "amar@sittr.co.nz"], ["recipientname", "Amar"], ["title", "Task"], ["updated_at", Fri, 07 Feb 2014 20:22:59 UTC +00:00], ["user_id", 3]]
+  [1m[36m (20.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:9080/tasks/20
+Completed 302 Found in 28ms (ActiveRecord: 21.5ms)
+
+
+Started GET "/tasks/20" for 127.0.0.1 at 2014-02-08 09:22:59 +1300
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "20"]]
+  Rendered tasks/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-02-08 09:23:08 +1300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (2.5ms)
+  [1m[35mTask Load (0.5ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/_send_mail.html.erb (1.0ms)
+  Rendered tasks/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 32ms (Views: 29.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/tasks/send_mail" for 127.0.0.1 at 2014-02-08 09:23:10 +1300
+Processing by TasksController#send_mail as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b03XVAabnKwRF+Hcq64q6xCx4QKrKMW8/5CqGF4CSCY=", "task_id"=>"\#{task.id}", "commit"=>"Remind"}
+Redirected to http://localhost:9080/
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "\#{task.id}"]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Task with id=#{task.id}):
+  app/controllers/tasks_controller.rb:75:in `send_mail'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-02-08 09:24:06 +1300
+Processing by TasksController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/_home.html.erb (1.5ms)
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/_send_mail.html.erb (9.5ms)
+  Rendered tasks/index.html.erb within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined local variable or method `task' for #<#<Class:0x580d3a0>:0x3d7c280>):
+    1: <%= form_tag("/tasks/send_mail", method: "post", url: send_mail_path) do  %>
+    2: <%= hidden_field_tag :task_id, "#{task.id}" %>
+    3: <%= submit_tag "Remind" %>
+    4: <% end %>
+  app/views/tasks/_send_mail.html.erb:2:in `block in _app_views_tasks__send_mail_html_erb___483847608_36138588'
+  app/views/tasks/_send_mail.html.erb:1:in `_app_views_tasks__send_mail_html_erb___483847608_36138588'
+  app/views/tasks/index.html.erb:28:in `block in _app_views_tasks_index_html_erb__480102125_27272844'
+  app/views/tasks/index.html.erb:18:in `_app_views_tasks_index_html_erb__480102125_27272844'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.5ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (35.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-02-08 09:25:12 +1300
+Processing by TasksController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/_home.html.erb (2.5ms)
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-08 09:25:12 +1300
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-08 09:25:12 +1300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-08 09:25:12 +1300
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-08 09:25:12 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-08 09:25:12 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-08 09:25:12 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-08 09:25:12 +1300
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-08 09:25:12 +1300
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-08 09:25:12 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-08 09:25:12 +1300
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-02-08 09:25:26 +1300
+Processing by TasksController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/_home.html.erb (1.5ms)
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/_send_mail.html.erb (7.5ms)
+  Rendered tasks/index.html.erb within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined local variable or method `task' for #<#<Class:0x580d3a0>:0x3d28448>):
+    1: <%= form_tag("/tasks/send_mail", method: "post", url: send_mail_path) do  %>
+    2: <%= hidden_field_tag :task_id, "#{task.id}" %>
+    3: <%= submit_tag "Remind" %>
+    4: <% end %>
+  app/views/tasks/_send_mail.html.erb:2:in `block in _app_views_tasks__send_mail_html_erb___483847608_36138588'
+  app/views/tasks/_send_mail.html.erb:1:in `_app_views_tasks__send_mail_html_erb___483847608_36138588'
+  app/views/tasks/index.html.erb:28:in `block in _app_views_tasks_index_html_erb__480102125_34257804'
+  app/views/tasks/index.html.erb:18:in `_app_views_tasks_index_html_erb__480102125_34257804'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.5ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-02-08 09:25:50 +1300
+Processing by TasksController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/_home.html.erb (1.0ms)
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-08 09:25:50 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-08 09:25:50 +1300
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-08 09:25:50 +1300
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-08 09:25:51 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-08 09:25:51 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-08 09:25:51 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-08 09:25:51 +1300
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-08 09:25:51 +1300
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-08 09:25:51 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-08 09:25:51 +1300
+
+
+Started POST "/tasks/send_mail" for 127.0.0.1 at 2014-02-08 09:25:52 +1300
+Processing by TasksController#send_mail as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b03XVAabnKwRF+Hcq64q6xCx4QKrKMW8/5CqGF4CSCY=", "task_id"=>"20", "commit"=>"Remind"}
+Redirected to http://localhost:9080/
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "20"]]
+  Rendered user_mail/task_reminder.html.erb (0.5ms)
+
+Sent mail to amar@sittr.co.nz (2678.8ms)
+Date: Sat, 08 Feb 2014 09:25:53 +1300
+From: bri.lobdell@gmail.com
+To: amar@sittr.co.nz
+Message-ID: <52f541518ecca_2bb8251ff285196a@Amar-PC.mail>
+Subject: You've been sent a reminded
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Here is your task, Amar</h1>
+    <p>
+      You are being reminded about Task. Here is what you've been asked to do:
+    </p>
+    <p>
+      Task
+    </p>
+  </body>
+</html>
+Redirected to 
+Completed 500 Internal Server Error in 3300ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/tasks_controller.rb:77:in `send_mail'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.0ms)
+
+
+Started POST "/tasks/send_mail" for 127.0.0.1 at 2014-02-08 09:26:17 +1300
+Processing by TasksController#send_mail as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b03XVAabnKwRF+Hcq64q6xCx4QKrKMW8/5CqGF4CSCY=", "task_id"=>"20", "commit"=>"Remind"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "20"]]
+  Rendered user_mail/task_reminder.html.erb (0.5ms)
+
+Sent mail to amar@sittr.co.nz (3241.4ms)
+Date: Sat, 08 Feb 2014 09:26:17 +1300
+From: bri.lobdell@gmail.com
+To: amar@sittr.co.nz
+Message-ID: <52f54169db1d5_2bb8251ff2852046@Amar-PC.mail>
+Subject: You've been sent a reminded
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Here is your task, Amar</h1>
+    <p>
+      You are being reminded about Task. Here is what you've been asked to do:
+    </p>
+    <p>
+      Task
+    </p>
+  </body>
+</html>
+Redirected to http://localhost:9080/tasks
+Completed 302 Found in 3282ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-02-08 09:26:21 +1300
+Processing by TasksController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/_home.html.erb (19.0ms)
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-08 09:26:21 +1300
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-08 09:26:21 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-08 09:26:21 +1300
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-08 09:26:21 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-08 09:26:21 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-08 09:26:21 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-08 09:26:21 +1300
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-08 09:26:21 +1300
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-08 09:26:21 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-08 09:26:21 +1300
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2014-02-08 09:31:22 +1300
+Processing by TasksController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered tasks/_form.html.erb (2.0ms)
+  Rendered tasks/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2014-02-08 09:32:14 +1300
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b03XVAabnKwRF+Hcq64q6xCx4QKrKMW8/5CqGF4CSCY=", "task"=>{"title"=>"asd", "description"=>"asdasd", "recipientname"=>"asdasd", "recipientemail"=>"amar@sittr.co.nz"}, "commit"=>"Create Task"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "recipientemail", "recipientname", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 07 Feb 2014 20:32:14 UTC +00:00], ["description", "asdasd"], ["recipientemail", "amar@sittr.co.nz"], ["recipientname", "asdasd"], ["title", "asd"], ["updated_at", Fri, 07 Feb 2014 20:32:14 UTC +00:00], ["user_id", 3]]
+  [1m[35m (25.5ms)[0m  commit transaction
+Redirected to http://localhost:9080/tasks/21
+Completed 302 Found in 47ms (ActiveRecord: 27.0ms)
+
+
+Started GET "/tasks/21" for 127.0.0.1 at 2014-02-08 09:32:14 +1300
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "21"]]
+  Rendered tasks/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-08 09:32:14 +1300
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-08 09:32:14 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-08 09:32:14 +1300
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-08 09:32:14 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-08 09:32:14 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-08 09:32:14 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-08 09:32:14 +1300
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-08 09:32:14 +1300
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-08 09:32:14 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-08 09:32:14 +1300
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-02-08 09:32:17 +1300
+Processing by TasksController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/_home.html.erb (1.5ms)
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/tasks/send_mail" for 127.0.0.1 at 2014-02-08 09:32:20 +1300
+Processing by TasksController#send_mail as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b03XVAabnKwRF+Hcq64q6xCx4QKrKMW8/5CqGF4CSCY=", "task_id"=>"21", "commit"=>"Remind"}
+  [1m[35mTask Load (0.5ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "21"]]
+Completed 500 Internal Server Error in 9ms
+
+NameError (undefined local variable or method `current_user' for #<UserMail:0x5933c40>):
+  app/mailers/user_mail.rb:6:in `task_reminder'
+  app/controllers/tasks_controller.rb:74:in `send_mail'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.5ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-02-08 09:33:09 +1300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (8.5ms)
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 39ms (Views: 34.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-08 09:33:10 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-08 09:33:10 +1300
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-08 09:33:10 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-08 09:33:10 +1300
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-08 09:33:10 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-08 09:33:10 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-08 09:33:10 +1300
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-08 09:33:10 +1300
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-08 09:33:10 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-08 09:33:10 +1300
+
+
+Started POST "/tasks/send_mail" for 127.0.0.1 at 2014-02-08 09:33:12 +1300
+Processing by TasksController#send_mail as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b03XVAabnKwRF+Hcq64q6xCx4QKrKMW8/5CqGF4CSCY=", "task_id"=>"20", "commit"=>"Remind"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "20"]]
+  Rendered user_mail/task_reminder.html.erb (0.5ms)
+
+Sent mail to amar@sittr.co.nz (2268.3ms)
+Date: Sat, 08 Feb 2014 09:33:12 +1300
+From: bri.lobdell@gmail.com
+To: amar@sittr.co.nz
+Message-ID: <52f543081cf41_2bb82c5353c52127@Amar-PC.mail>
+Subject: You've been sent a reminded
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Here is your task, Amar</h1>
+    <p>
+      You are being reminded about Task. Here is what you've been asked to do:
+    </p>
+    <p>
+      Task
+    </p>
+  </body>
+</html>
+Redirected to http://localhost:9080/tasks
+Completed 302 Found in 2290ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-02-08 09:33:14 +1300
+Processing by TasksController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/_home.html.erb (2.5ms)
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-08 09:33:14 +1300
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-08 09:33:14 +1300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-08 09:33:14 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-08 09:33:14 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-08 09:33:14 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-08 09:33:14 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-08 09:33:14 +1300
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-08 09:33:14 +1300
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-08 09:33:14 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-08 09:33:14 +1300
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-02-08 09:36:11 +1300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/_home.html.erb (12.0ms)
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 123ms (Views: 87.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-08 09:36:11 +1300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-08 09:36:11 +1300
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-08 09:36:11 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-08 09:36:11 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-08 09:36:11 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-08 09:36:11 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-08 09:36:11 +1300
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-08 09:36:11 +1300
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-08 09:36:11 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-08 09:36:11 +1300
+
+
+Started POST "/tasks/send_mail" for 127.0.0.1 at 2014-02-08 09:36:14 +1300
+Processing by TasksController#send_mail as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b03XVAabnKwRF+Hcq64q6xCx4QKrKMW8/5CqGF4CSCY=", "task_id"=>"20", "commit"=>"Remind"}
+  [1m[35mTask Load (0.5ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "20"]]
+  Rendered user_mail/task_reminder.html.erb (0.5ms)
+
+Sent mail to amar@sittr.co.nz (2357.8ms)
+Date: Sat, 08 Feb 2014 09:36:14 +1300
+From: bri.lobdell@gmail.com
+To: amar@sittr.co.nz
+Message-ID: <52f543be64669_ec42f9fd24366a4@Amar-PC.mail>
+Subject: You've been sent a reminded
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Here is your task, Amar</h1>
+    <p>
+      You are being reminded about Task. Here is what you've been asked to do:
+    </p>
+    <p>
+      Task
+    </p>
+  </body>
+</html>
+Redirected to http://localhost:9080/tasks
+Completed 302 Found in 2746ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-02-08 09:36:16 +1300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/_home.html.erb (3.0ms)
+  [1m[35mTask Load (0.5ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-08 09:36:16 +1300
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-08 09:36:16 +1300
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-08 09:36:16 +1300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-08 09:36:16 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-08 09:36:16 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-08 09:36:16 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-08 09:36:16 +1300
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-08 09:36:16 +1300
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-08 09:36:16 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-08 09:36:17 +1300
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-02-08 09:48:12 +1300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/_home.html.erb (12.5ms)
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 125ms (Views: 89.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-02-08 09:48:12 +1300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-08 09:48:12 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-08 09:48:12 +1300
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-08 09:48:12 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-08 09:48:12 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-08 09:48:12 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-08 09:48:12 +1300
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-08 09:48:12 +1300
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-02-08 09:48:12 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-08 09:48:12 +1300
+
+
+Started POST "/tasks/send_mail" for 127.0.0.1 at 2014-02-08 09:48:14 +1300
+Processing by TasksController#send_mail as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b03XVAabnKwRF+Hcq64q6xCx4QKrKMW8/5CqGF4CSCY=", "task_id"=>"20", "commit"=>"Remind"}
+  [1m[35mTask Load (0.5ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "20"]]
+  Rendered user_mail/task_reminder.html.erb (0.0ms)
+
+Sent mail to amar@sittr.co.nz (4970.6ms)
+Date: Sat, 08 Feb 2014 09:48:15 +1300
+From: bri.lobdell@gmail.com
+To: amar@sittr.co.nz
+Message-ID: <52f5468f2aca2_12181fed8fc2034@Amar-PC.mail>
+Subject: You've been sent a reminded
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Here is your task, Amar</h1>
+    <p>
+      You are being reminded about Task. Here is what you've been asked to do:
+    </p>
+    <p>
+      Task
+    </p>
+  </body>
+</html>
+Completed 500 Internal Server Error in 5351ms
+
+Net::SMTPAuthenticationError (530-5.5.1 Authentication Required. Learn more at
+):
+  app/controllers/tasks_controller.rb:74:in `send_mail'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.5ms)
+
+
+Started POST "/tasks/send_mail" for 127.0.0.1 at 2014-02-08 15:06:19 +1300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#send_mail as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b03XVAabnKwRF+Hcq64q6xCx4QKrKMW8/5CqGF4CSCY=", "task_id"=>"20", "commit"=>"Remind"}
+  [1m[35mTask Load (0.5ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "20"]]
+  Rendered user_mail/task_reminder.html.erb (15.0ms)
+
+Sent mail to amar@sittr.co.nz (6085.3ms)
+Date: Sat, 08 Feb 2014 15:06:19 +1300
+From: bri.lobdell@gmail.com
+To: amar@sittr.co.nz
+Message-ID: <52f5911b8395c_27f41fc9fbc5495d@Amar-PC.mail>
+Subject: You've been sent a reminded
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Here is your task, Amar</h1>
+    <p>
+      You are being reminded about Task. Here is what you've been asked to do:
+    </p>
+    <p>
+      Task
+    </p>
+  </body>
+</html>
+Completed 500 Internal Server Error in 6547ms
+
+Net::SMTPAuthenticationError (535-5.7.8 Username and Password not accepted. Learn more at
+):
+  app/controllers/tasks_controller.rb:74:in `send_mail'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)

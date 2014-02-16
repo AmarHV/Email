@@ -5,8 +5,8 @@ Emailtest::Application.configure do
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'my_app.com',
-    user_name:            ENV['bri.lobdell@gmail.com'],
-    password:             ENV['cindy1720'],
+    user_name:            'bri.lobdell@gmail.com',
+    password:             'cindy1720',
     authentication:       'plain',
     enable_starttls_auto: true  }
   # Settings specified here will take precedence over those in config/application.rb.
@@ -24,7 +24,7 @@ Emailtest::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -38,6 +38,6 @@ Emailtest::Application.configure do
   config.assets.debug = true
 
   # required for heroku
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'localhost:9080' }
 
 end
